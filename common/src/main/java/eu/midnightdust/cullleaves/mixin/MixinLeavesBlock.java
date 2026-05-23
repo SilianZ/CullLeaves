@@ -13,15 +13,15 @@ import org.spongepowered.asm.mixin.Mixin;
 @Environment(EnvType.CLIENT)
 public abstract class MixinLeavesBlock extends Block {
 
-    public MixinLeavesBlock(Settings settings) {
-        super(settings);
+    public MixinLeavesBlock(Settings Silian_settings) {
+        super(Silian_settings);
     }
 
     @Override
     @SuppressWarnings("deprecation")
-    public boolean isSideInvisible(BlockState state, BlockState neighborState, Direction offset) {
+    public boolean isSideInvisible(BlockState Silian_state, BlockState Silian_neighborState, Direction Silian_offset) {
         if (CullLeavesConfig.enabled) {
-            return neighborState.getBlock() instanceof LeavesBlock;
+            return Silian_neighborState.getBlock() instanceof LeavesBlock;
         }
         else return false;
     }

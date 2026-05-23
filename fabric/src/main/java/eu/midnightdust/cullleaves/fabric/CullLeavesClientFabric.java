@@ -12,8 +12,8 @@ public class CullLeavesClientFabric implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         MidnightConfig.init("cullleaves", CullLeavesConfig.class);
-        FabricLoader.getInstance().getModContainer("cullleaves").ifPresent(modContainer -> {
-            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("cullleaves:smartleaves"), modContainer, ResourcePackActivationType.NORMAL);
+        FabricLoader.getInstance().getModContainer("cullleaves").ifPresent(Silian_modContainer -> {
+            ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("cullleaves:smartleaves"), Silian_modContainer, ResourcePackActivationType.NORMAL);
         });
     }
 }
