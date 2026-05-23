@@ -10,8 +10,8 @@ import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 
 public class CullLeavesClientQuilt implements ClientModInitializer {
     @Override
-    public void onInitializeClient(ModContainer mod) {
+    public void onInitializeClient(ModContainer Silian_mod) {
         MidnightConfig.init("cullleaves", CullLeavesConfig.class);
-        ResourceLoader.registerBuiltinResourcePack(new Identifier("cullleaves:smartleaves"), mod, ResourcePackActivationType.NORMAL);
+        ResourceLoader.registerBuiltinResourcePack(new Identifier("cullleaves:smartleaves"), Silian_mod, ResourcePackActivationType.NORMAL);
     }
 }
